@@ -15,7 +15,7 @@ export class EstacionamientoComponent {
   horas: number = 0;
   minutos: number = 0;
   costo: number = 0;
-  tarifaPorHora: number = 1.500; // Tarifa por hora en soles
+  tarifaPorHora: number = 1500;
 
   calcularCosto(): void {
     const tiempoTotalEnHoras = this.horas + (this.minutos / 60);

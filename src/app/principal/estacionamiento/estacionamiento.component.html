@@ -21,7 +21,7 @@
     </mat-card-actions>
   
     <mat-card-footer>
-      <p *ngIf="costo > 0">Costo total: S/. {{ costo.toFixed(2) }}</p>
+      <p *ngIf="costo > 0">Costo total: {{costo | currency: "S/."}}</p>
     </mat-card-footer>
   </mat-card>
   
