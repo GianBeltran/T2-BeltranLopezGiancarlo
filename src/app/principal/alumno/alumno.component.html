@@ -1,1 +1,35 @@
-<p>alumno works!</p>
+<mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>Calcular Promedio de Notas</mat-card-title>
+    </mat-card-header>
+  
+    <mat-card-content>
+      <div class="form">
+        <mat-form-field>
+          <mat-label>Nota 1:</mat-label>
+          <input matInput type="number" [(ngModel)]="nota1">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Nota 2:</mat-label>
+          <input matInput type="number" [(ngModel)]="nota2">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Nota 3:</mat-label>
+          <input matInput type="number" [(ngModel)]="nota3">
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Nota 4:</mat-label>
+          <input matInput type="number" [(ngModel)]="nota4">
+        </mat-form-field>
+      </div>  
+    </mat-card-content>
+  
+    <mat-card-actions>
+      <button mat-button (click)="calcularPromedio()">Calcular Promedio</button>
+    </mat-card-actions>
+  
+    <mat-card-footer>
+      <p *ngIf="promedio > 0">Promedio: {{ promedio.toFixed(2) }}</p>
+    </mat-card-footer>
+  </mat-card>
+  
