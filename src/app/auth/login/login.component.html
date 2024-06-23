@@ -1,0 +1,23 @@
+<mat-card appearance="outlined">
+    <mat-card-header>
+      <mat-card-title>INICIAR SESIÓN</mat-card-title>
+    </mat-card-header>
+
+    <mat-card-content>
+        <div class="form">
+            <mat-form-field>
+                <mat-label>Usuario:</mat-label>
+                <input matInput type="text" #txtUsuario>
+            </mat-form-field>
+            <mat-form-field>
+                <mat-label>Password:</mat-label>
+                <input matInput type="password" #txtPassword>
+            </mat-form-field>
+        </div>  
+    </mat-card-content>
+
+    <mat-card-actions>
+      <button mat-button (click)="submit(txtUsuario, txtPassword)">INGRESAR</button>
+    </mat-card-actions>
+</mat-card>
+
