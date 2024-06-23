@@ -1,1 +1,27 @@
-<p>principal works!</p>
+<mat-toolbar color="primary">
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+      <mat-icon>menu</mat-icon>
+    </button>
+    <span (click)="irHome()">SISTEMA BELOP</span>
+    
+    &nbsp;&nbsp;
+    <button mat-button (click)="irEstacionamiento()">Estacionamiento</button>
+    &nbsp;&nbsp;
+    <button mat-button (click)="irAlumno()">Alumno</button>
+    &nbsp;&nbsp;
+    <button mat-button (click)="irAlmacen()">Almacen</button>
+    
+
+    <span class="example-spacer"></span>
+    <button mat-icon-button class="example-icon favorite-icon" aria-label="Example icon-button with heart icon">
+      <mat-icon>favorite</mat-icon>
+    </button>
+    <button mat-icon-button (click)="salir()" class="example-icon" aria-label="Example icon-button with share icon">
+      <mat-icon>logout</mat-icon>
+    </button>
+</mat-toolbar>
+  
+
+
+<router-outlet></router-outlet>
+
